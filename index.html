@@ -21,6 +21,20 @@
     <title>exercícios de JavaScript</title>
 </head>
 <body>
+    <h1>Painel de Exercícios</h1>
     
+    <!-- Criando botões dinamicamente para não escrever 20 vezes no HTML -->
+    <div id="menu"></div>
+
+    <script src="main.js"></script>
+    <script>
+        const menu = document.getElementById('menu');
+        for (let i = 1; i <= 20; i++) {
+            const btn = document.createElement('button');
+            btn.innerText = `Ex ${i}`;
+            btn.onclick = () => carregarExercicio(i);
+            menu.appendChild(btn);
+        }
+    </script>
 </body>
 </html>

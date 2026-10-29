@@ -3,28 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            font-size: 18px;
-            background-color: #d7f8f1;
-            color: #242424;
-            padding: 20px;
-        }
-        h1 {
-            padding: 8px;
-            border-radius: 12px;
-            color: #d2e9ff;
-            background-color: #2c3e50;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css"> <!-- Link para o arquivo CSS -->
     <title>exercícios de JavaScript</title>
 </head>
 <body>
     <h1>Painel de Exercícios</h1>
     
     <!-- Criando botões dinamicamente para não escrever 20 vezes no HTML -->
-    <div id="menu"></div>
+    <section id="button-section">
+        <div id="menu"></div>
+    </section>
     <script src="main.js"></script>
     <script>
         const menu = document.getElementById('menu');

@@ -1,0 +1,75 @@
+:root {
+	/* Paleta de cores */
+	--color-1: #38908f;
+	--color-2: #b2ebe0;
+	--color-3: #5e96ae;
+	--color-4: #ffbfa3;
+	--color-5: #e08963;
+	/* Fonte para títulos (Google Fonts: Plaster) */	
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
+
+/* Aplicar a cor #5e96ae ao body */
+body {
+	background-color: var(--color-3);
+	color: #fff; /* texto legível sobre o fundo */
+	margin: 0;
+	font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* Exemplos de utilitários usando as variáveis */
+.accent { color: var(--color-1); }
+.muted { color: var(--color-2); }
+.highlight { background-color: var(--color-4); }
+.danger { color: var(--color-5); }
+
+/* Aplicar a cor --color-3 às sections */
+section {
+	background-color: var(--color-1);
+	color: #fff; /* garante legibilidade sobre o fundo */
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 1200px; /* limita a largura em telas grandes */
+	margin: 0 auto; /* centraliza horizontalmente */
+	padding: 2rem; /* espaçamento interno padrão */
+	border-radius: 8px;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 900px) {
+    section {
+        padding: 1.5rem;
+        max-width: 900px;
+    }
+}
+
+@media (max-width: 600px) {
+    section {
+        padding: 1rem;
+        border-radius: 0;
+    }
+}
+
+/* Botões: cor padrão --color-5, ao passar o mouse --color-4 */
+button, .btn {
+	background-color: var(--color-5);
+	color: #fff;
+	border: none;
+	padding: 0.5rem 1rem;
+	border-radius: 4px;
+	font: inherit;
+}
+
+button:hover, .btn:hover {
+	background-color: var(--color-4);
+	cursor: pointer;
+}
+
+/* Títulos: usar a fonte "Notable" */
+h1 {
+    text-align: center;
+    font-family: "Notable", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
